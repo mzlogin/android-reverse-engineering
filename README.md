@@ -11,7 +11,7 @@ My notes for android reverse engineering learning.
 
 一直想写点关于 Android 逆向工程的东西，却迟迟不能开始。先挖个坑放在这里吧，有现成的坑才更容易产生填的欲望。
 
-## 工具链
+## 工具集
 
 * [apktool][1]
 

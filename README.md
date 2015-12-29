@@ -15,7 +15,7 @@ My notes for android reverse engineering learning.
 
 一直想写点关于 Android 逆向工程的东西，却迟迟不能开始。先挖个坑放在这里吧，有现成的坑才更容易产生填的欲望。
 
-我要写的不是一份全面且详细的工具介绍，也不是一份完整的技术原理说明，重点在记录与分享我在实践过程中的经验。比如我使用到某一个工具，将只介绍我所使用到的功能与命令，如果想了解工具完整的功能与使用方法，可以参考工具的官网。
+我要写的不是一份全面且详细的工具介绍，也不是一份完整的技术原理说明，重点在记录与分享我在实践过程中的经验。如果我提到某一个工具，将只介绍我所使用到的功能与命令，想了解工具完整的功能与使用方法可以参考工具的官网。
 
 ## 工具准备
 
@@ -42,7 +42,7 @@ My notes for android reverse engineering learning.
 
 * [jd-gui][3]
 
-    用于直接阅读 jar 文件里的 .class 文件对应的 Java 代码。
+    用于直接打开 jar 文件阅读 Java 代码，支持搜索，还有一定程度上的类间跳转。
 
 * [Android Studio][4]
 
@@ -66,7 +66,7 @@ My notes for android reverse engineering learning.
 
 ### Smali
 
-我对 Smali 的理解是它是 Android 使用的 Java 虚拟机能理解的一种字节码。
+我对 Smali 的认识是它是 Android 使用的 Java 虚拟机能理解的一种字节码。
 
 这部分我是看《Android软件安全与逆向分析》一书的「第 3 章 进入 Android Dalvik 虚拟机」入门。
 

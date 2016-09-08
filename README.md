@@ -10,6 +10,7 @@ My notes for android reverse engineering learning.
 	* [其它工具](#其它工具)
 * [基础知识准备](#基础知识准备)
 	* [Smali](#smali)
+		* [数据类型](#数据类型)
 
 ## 前言
 
@@ -74,6 +75,46 @@ My notes for android reverse engineering learning.
 
 * [Dalvik opcodes][8]
 * [Dalvik bytecode][9]
+
+#### 数据类型
+
+**基本数据类型**
+
+| Smali 类型 | 对应 Java 类型          |
+|------------|-------------------------|
+| V          | void - 只能用作返回类型 |
+| Z          | boolean                 |
+| B          | byte                    |
+| S          | short                   |
+| C          | char                    |
+| I          | int                     |
+| J          | long (64 bits)          |
+| F          | float                   |
+| D          | double (64 bits)        |
+
+**类类型**
+
+表示方法：
+
+```
+Lpackage/name/ObjectName;
+```
+
+比如 String 的类型表示为：
+
+```
+Ljava/lang/String;
+```
+
+**数组类型**
+
+表示方法：
+
+```
+[I 对应 int[]
+[[I 对应 int[][]
+[Ljava/lang/String; 表示 String[]
+```
 
 [0]: http://www.7-zip.org/
 [1]: https://github.com/iBotPeaches/Apktool

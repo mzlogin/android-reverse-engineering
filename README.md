@@ -20,7 +20,7 @@ My notes for android reverse engineering learning.
 
 ## 工具准备
 
-### 我使用的工具
+### 必备工具
 
 本节罗列的是我使用到的工具集。
 
@@ -41,6 +41,8 @@ My notes for android reverse engineering learning.
 
     *注：根据 apktool 官网的声明，反编译成调试版 Smali 文件的功能将在 2.0.3 版被废弃，到 2.1 版完全移除，因为有了 IdeaSmali。*
 
+### 调试工具
+
 * [Android Studio][]
 
     用于动态调试。
@@ -53,11 +55,11 @@ My notes for android reverse engineering learning.
 
     最强大的静态逆向分析工具，没有之一。
 
-* [Smali 语法高亮与 Tag 支持][]
+### 备用工具
 
-    Vim 里的 Smali 语法支持。
+* [enjarify][]
 
-### 其它工具
+    反编译 Dex/Apk 文件。
 
 * [dex2jar][]
 
@@ -66,6 +68,10 @@ My notes for android reverse engineering learning.
 * [jd-gui][]
 
     用于直接打开 jar 文件阅读 Java 代码，支持搜索，还有一定程度上的类间跳转。
+
+* [Smali 语法高亮与 Tag 支持][]
+
+    Vim 里的 Smali 语法支持。
 
 ## 基础知识准备
 
@@ -131,3 +137,4 @@ Ljava/lang/String;
 [Dalvik opcodes]: http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html
 [Dalvik bytecode]: https://source.android.com/devices/tech/dalvik/dalvik-bytecode.html
 [jadx]: https://github.com/skylot/jadx
+[enjarify]: https://github.com/Storyyeller/enjarify

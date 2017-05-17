@@ -4,13 +4,17 @@ My notes for android reverse engineering learning.
 
 ## 目录
 
+<!-- vim-markdown-toc GFM -->
 * [前言](#前言)
 * [工具准备](#工具准备)
-	* [我使用的工具](#我使用的工具)
-	* [其它工具](#其它工具)
+    * [必备工具](#必备工具)
+    * [调试工具](#调试工具)
+    * [备用工具](#备用工具)
 * [基础知识准备](#基础知识准备)
-	* [Smali](#smali)
-		* [数据类型](#数据类型)
+    * [Smali](#smali)
+        * [数据类型](#数据类型)
+
+<!-- vim-markdown-toc -->
 
 ## 前言
 

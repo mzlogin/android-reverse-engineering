@@ -24,44 +24,48 @@ My notes for android reverse engineering learning.
 
 本节罗列的是我使用到的工具集。
 
-* [7-zip][0]
+* [7-zip][]
 
-    好用的压缩/解压缩软件，APK 文件基于 ZIP 文件格式，有时候我们需要将其直接解压来分析里面的内容。
+    好用的压缩/解压缩软件，Apk 文件基于 ZIP 文件格式，有时候我们需要将其直接解压来分析里面的内容。
 
-* [apktool][1]
+* [jadx][]
+
+    直接打开 Dex/Apk 文件查看反编译出的 Java 代码，个人觉得输出的代码可读性比 dex2jar 要好。
+
+* [apktool][]
 
     Android 逆向工程的主要工具之一，用于：
-    1. 将 APK 文件里的可执行文件和资源解包成我们能看懂的格式。
-    2. 将解包后的文件重新打包成 APK。
-    3. 将 APK 里的 dex 文件反编译成调试版的 Smali 文件。
+    1. 将 Apk 文件里的可执行文件和资源解包成我们能看懂的格式。
+    2. 将解包后的文件重新打包成 Apk。
+    3. 将 Apk 里的 dex 文件反编译成调试版的 Smali 文件。
 
     *注：根据 apktool 官网的声明，反编译成调试版 Smali 文件的功能将在 2.0.3 版被废弃，到 2.1 版完全移除，因为有了 IdeaSmali。*
 
-* [dex2jar][2]
-
-    用于将 dex 文件转化成 jar 文件。
-
-* [jd-gui][3]
-
-    用于直接打开 jar 文件阅读 Java 代码，支持搜索，还有一定程度上的类间跳转。
-
-* [Android Studio][4]
+* [Android Studio][]
 
     用于动态调试。
 
-* [IDA Pro][5]
+* [smalidea][]
+
+    用于支持 Android Studio 和 IntelliJ IDEA 高亮显示和动态调试 Smali 文件的插件。
+
+* [IDA Pro][]
 
     最强大的静态逆向分析工具，没有之一。
 
-* [Smali 语法高亮与 Tag 支持][6]
+* [Smali 语法高亮与 Tag 支持][]
 
     Vim 里的 Smali 语法支持。
 
 ### 其它工具
 
-* [smalidea][7]
+* [dex2jar][]
 
-    用于支持 Android Studio 和 IntelliJ IDEA 高亮显示和动态调试 Smali 文件的插件。
+    用于将 dex 文件转化成 jar 文件。
+
+* [jd-gui][]
+
+    用于直接打开 jar 文件阅读 Java 代码，支持搜索，还有一定程度上的类间跳转。
 
 ## 基础知识准备
 
@@ -73,8 +77,8 @@ My notes for android reverse engineering learning.
 
 以下链接可作为手册备查：
 
-* [Dalvik opcodes][8]
-* [Dalvik bytecode][9]
+* [Dalvik opcodes][]
+* [Dalvik bytecode][]
 
 #### 数据类型
 
@@ -116,13 +120,14 @@ Ljava/lang/String;
 [Ljava/lang/String; 表示 String[]
 ```
 
-[0]: http://www.7-zip.org/
-[1]: https://github.com/iBotPeaches/Apktool
-[2]: https://github.com/pxb1988/dex2jar
-[3]: https://github.com/java-decompiler/jd-gui
-[4]: https://developer.android.com/sdk/index.html
-[5]: https://www.hex-rays.com/products/ida/index.shtml
-[6]: http://mazhuang.org/2015/06/23/vim-taglist-smali/
-[7]: https://github.com/JesusFreke/smali/wiki/smalidea
-[8]: http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html
-[9]: https://source.android.com/devices/tech/dalvik/dalvik-bytecode.html
+[7-zip]: http://www.7-zip.org/
+[apktool]: https://github.com/iBotPeaches/Apktool
+[dex2jar]: https://github.com/pxb1988/dex2jar
+[jd-gui]: https://github.com/java-decompiler/jd-gui
+[Android Studio]: https://developer.android.com/sdk/index.html
+[IDA Pro]: https://www.hex-rays.com/products/ida/index.shtml
+[Smali 语法高亮与 Tag 支持]: http://mazhuang.org/2015/06/23/vim-taglist-smali/
+[smalidea]: https://github.com/JesusFreke/smali/wiki/smalidea
+[Dalvik opcodes]: http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html
+[Dalvik bytecode]: https://source.android.com/devices/tech/dalvik/dalvik-bytecode.html
+[jadx]: https://github.com/skylot/jadx

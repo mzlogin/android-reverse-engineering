@@ -5,6 +5,7 @@ My notes for android reverse engineering learning.
 ## 目录
 
 <!-- vim-markdown-toc GFM -->
+
 * [前言](#前言)
 * [工具准备](#工具准备)
     * [必备工具](#必备工具)
@@ -44,6 +45,10 @@ My notes for android reverse engineering learning.
     3. 将 Apk 里的 dex 文件反编译成调试版的 Smali 文件。
 
     *注：根据 apktool 官网的声明，反编译成调试版 Smali 文件的功能将在 2.0.3 版被废弃，到 2.1 版完全移除，因为有了 IdeaSmali。*
+
+* [frida][]
+
+    逆向、Hook 等，还没深入研究过。
 
 ### 调试工具
 
@@ -142,3 +147,4 @@ Ljava/lang/String;
 [Dalvik bytecode]: https://source.android.com/devices/tech/dalvik/dalvik-bytecode.html
 [jadx]: https://github.com/skylot/jadx
 [enjarify]: https://github.com/Storyyeller/enjarify
+[frida]: https://github.com/frida/frida
